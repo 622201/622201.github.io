@@ -254,8 +254,7 @@
 <p>新建完成后，指定文件夹Hexo目录下有：</p>
 <p>node_modules: 依赖包<br>public：存放生成的页面<br>scaffolds：生成文章的一些模板<br>source：用来存放你的文章<br>themes：主题**<br>_config.yml: 博客的配置文件**<br>这样本地的网站配置也弄好啦，输入hexo g生成静态网页，然后输入hexo s打开本地服务器，  </p>
 <figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br><span class="line">$ hexo server(或者简写:hexo s)</span><br></pre></td></tr></table></figure>
-
-<p>按ctrl+c关闭本地服务器。</p>
+<p><img src="https://pic2.zhimg.com/v2-b5e200db2b71c2c8528e907eb2c5efa1_r.jpg"><br>按ctrl+c关闭本地服务器。</p>
 <p>##4. 注册Github账号创建个人仓库<br>接下来就去注册一个github账号，用来存放我们的网站。<br>打开<br><a target="_blank" rel="noopener" href="https://github.com/">github官网</a><br>新建一个项目仓库New repository：</p>
 <figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">要创建一个和你用户名相同的仓库，后面加.[http://github.io，</span><br><span class="line">只有这样，将来要部署到GitHub page的时候，才会被识别，也就是http://xxxx.github.io，</span><br><span class="line">其中xxx就是你注册GitHub的用户名。例如我的：http://622201.github.io</span><br></pre></td></tr></table></figure>
 
@@ -269,6 +268,7 @@
 <figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cat</span> ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
 <p>将输出的内容复制到框中，点击确定保存。</p>
 <p>打开github，在头像下面点击settings，再点击SSH and GPG keys，新建一个SSH，名字随便取一个都可以，把你的id_rsa.pub里面的信息复制进去。如图：  </p>
+<p><img src="https://pic1.zhimg.com/v2-eed8cf1e076556b3390378642f66b5cc_r.jpg"></p>
 <p>##6. 将hexo部署到GitHub</p>
 <p>这一步，我们就可以将hexo和GitHub关联起来，也就是将hexo生成的文章部署到GitHub上，打开博客根目录下的_config.yml文件，这是博客的配置文件，在这里你可以修改与博客配置相关的各种信息。</p>
 <p>修改最后一行的配置：</p>
